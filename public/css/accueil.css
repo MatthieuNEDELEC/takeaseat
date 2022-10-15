@@ -1,0 +1,9 @@
+#logo_tas{
+    width: 50%;
+}
+
+@media screen and (max-width:991px){
+    #logo_tas{
+        width: 60%;
+    }
+}

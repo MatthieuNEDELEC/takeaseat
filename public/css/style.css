@@ -19,7 +19,7 @@ body {
   min-height: 100%;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
-  padding: 0 20px;
+  padding: 0px;
   position: relative;
 }
 
@@ -75,32 +75,4 @@ textarea:focus,
   -webkit-box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
   outline: none;
-}
-
-/* Navbar styles */
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 15px;
-}
-
-nav a,
-nav a:visited,
-nav a:hover,
-nav a:active,
-nav a:focus {
-  border-bottom: 1px solid #006f8e;
-  font-size: 0.8rem;
-  margin: 0 6px;
-  padding: 8px;
-  text-transform: uppercase;
-}
-
-nav a:hover {
-  background: hsl(0, 0%, 100%);
-  text-decoration: none;
 }
