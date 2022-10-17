@@ -1,6 +1,13 @@
 body {
   background-color: #fffaea;
 }
+
+.home {
+  left: 50%;
+  top: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 .contain {
   height: 400px;
   width: 400px;
