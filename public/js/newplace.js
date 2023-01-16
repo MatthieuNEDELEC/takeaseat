@@ -137,7 +137,7 @@ $(document).ready(function(){
 			success: function(msg, status, jqXHR){
 				if(msg.err == null && msg.success == true){
 					Swal.fire(
-						"C'est Good !", "Les Polyrats vont examiner ta plainte, on revient vers toi très vite !",
+						"C'est Good !", "Ton établissement a été ajouté !",
 						'success'
 					);
 					nbInput.value = "";
@@ -159,7 +159,7 @@ $(document).ready(function(){
 				else{
 					Swal.fire(
                         "Impossible d'ajouter le bar",
-						"Une erreur inconnue est suvenue, là c'est la merde, merci de nous avertir ^^",
+						"Une erreur inconnue est suvenue, là c'est la hesse, merci de nous avertir ^^",
 						'error'
 					);
 				}
