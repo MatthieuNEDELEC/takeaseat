@@ -10,12 +10,13 @@ html {
   text-align: center;
 }
 
+
 body {
-  background: hsl(0, 0%, 90%);
-  background: -webkit-gradient(linear, left top, right top, from(hsl(0, 0%, 90%)), to(hsl(0, 0%, 95%))) fixed;
-  background: -o-linear-gradient(left, hsl(0, 0%, 90%), hsl(0, 0%, 95%)) fixed;
-  background: linear-gradient(to right, hsl(0, 0%, 90%), hsl(0, 0%, 95%)) fixed;
-  color: hsl(0, 0%, 20%);
+  background: #1d1d1d;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(0, 0%, 13%)), to(hsl(0, 1%, 17%))) fixed;
+  background: -o-linear-gradient(left, hsl(0, 0%, 22%), hsl(0, 0%, 13%)) fixed;
+  background: linear-gradient(to right, hsl(0, 0%, 12%), hsl(0, 0%, 18%)) fixed;
+  color: #cdcdcd;
   min-height: 100%;
   -ms-scroll-chaining: none;
   overscroll-behavior: none;
@@ -25,10 +26,12 @@ body {
 
 main {
   padding: 40px 0 6rem;
+  margin: 0 20px;
 }
 
 footer {
   background: hsl(0, 0%, 100%);
+  color: #1d1d1d;
   bottom: 0;
   font-size: 0.8rem;
   left: 0;

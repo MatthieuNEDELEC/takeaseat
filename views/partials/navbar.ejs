@@ -1,5 +1,7 @@
 <header>
 
+<link rel="stylesheet" href="/css/partials/navbar.css">
+
 <div class="navbar">
 
   <div class="brand">
@@ -13,7 +15,7 @@
 
     <div class="menu-items">
         <a href="/" target="_self">Home</a>
-        <a href="/map" target="_self">Map</a>
+        <a href="/places" target="_self">Map</a>
         <a href="/newPlace" target="_self">Add a Place</a>
         <a href="/recommendations" target="_self">Recommendations</a>
         <a href="/contact" target="_self">Contact us</a>
@@ -22,170 +24,6 @@
   <span style="font-size:30px;cursor:pointer" class="open" onclick="openNav()">&#9776;</span>
 </div>
 
+<script src="/js/partials/navbar.js"></script>
+
 </header>
-
-<script>
-  function openNav() {
-    document.getElementById("menu").style.height = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("menu").style.height = "0%";
-  }
-</script>
-
-<style>
-
-.navbar{
-  width: 100%;
-  background-color: white;
-  opacity: 0.75;
-  margin:0 0 20px 0;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  position: relative;
-  z-index: 3;
-}
-
-nav a{
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-
-.brand{
-  float: left;
-  margin: 10px 0 10px 20px;
-}
-.menu-items a{
-  font-size: 1em;
-}
-
-.brand a{
-  font-size: 2.5vw;
-  float: left;
-  text-decoration: none;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-.menu-items a{
-  float: left;
-  text-decoration: none;
-  opacity: 0.5;
-  transition: 0.5s;
-  margin: 0 6px;
-}
-
-a:hover{
-  opacity: 1;
-}
-
-.open, .close{
-	display:none;
-}
-
-.separatelinetitle {
-  margin: 0 0 0 20px;
-  border-left: 3px solid lightgrey;
-  height: 25px;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width:100%;
-  height: auto;
-}
-
-nav a,
-nav a:visited,
-nav a:hover,
-nav a:active,
-nav a:focus {
-  border-bottom: 1px solid #006f8e;
-  font-size: 0.8rem;
-  padding: 8px;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 991px) {
-
-  .open, .close{
-    display:block;
-    margin-left: auto;
-    margin-right: 20px;
-  }
-
-  .navbar{
-    opacity: 1;
-  }
-
-  .brand a{
-    font-size: 5vw;
-  }
-
-  #menu {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-
-  .menu-items {
-    position: relative;
-    vertical-align: middle;
-    text-align: center;
-    top: 50%; left: 50%;
-  	transform: translate(-50%,-50%);
-  }
-
-  #menu a {
-    float: none;
-    padding: 8px;
-    margin: 1vh 0;
-    text-decoration: none;
-    font-size: 5vw;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  #menu a:hover, #menu a:focus {
-    color: #006f8e;
-  }
-
-  #menu .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 60px;
-  }
-
-  nav{
-    display: block;
-  }
-
-  nav a,
-  nav a:visited,
-  nav a:hover,
-  nav a:active,
-  nav a:focus {
-    border-bottom: none;
-  }
-  
-}
-
-</style>

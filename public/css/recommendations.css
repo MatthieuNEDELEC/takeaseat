@@ -1,0 +1,24 @@
+#conseils{
+    margin-top: 50px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#conseils>li{
+    margin: 20px 0;
+    border-radius: 20px;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+#conseils>li>legend{
+    font-style: italic;
+    font-size: 0.75em;
+    display: block;
+}
+
+#conseils>li>p{
+    text-align: justify;
+}

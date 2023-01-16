@@ -1,1 +1,27 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" crossorigin=""/>
+<link rel="stylesheet" href="/css/newplace.css">
+
 <h1><%= page %></h1>
+
+<div class="container py-5">
+  <div class="row justify-content-md-center">
+    <input id="search-field" type="text">
+    <button type="button" id="search-button">Chercher</button>
+  </div>
+  <div class="row mt-5">
+    <ul id="result-list" class="col-4 list-group">
+    </ul>
+    <div class="col-8">
+      <div id="map-container" style="height: 75vh;"></div>
+    </div>
+  </div>
+  <div id="nb">
+    <input id="nb-field" type="text" placeholder="Capacité" required>
+    <button type="submit" id="nb-button">Ajouter le lieu</button>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" crossorigin=""></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/newplace.js"></script>

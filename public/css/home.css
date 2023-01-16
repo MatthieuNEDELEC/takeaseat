@@ -1,5 +1,6 @@
 #logo_tas{
     width: 50%;
+    opacity: 0.75;
 }
 
 @media screen and (max-width:991px){

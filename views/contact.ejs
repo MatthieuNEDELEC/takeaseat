@@ -12,11 +12,11 @@
 		</p>
 		<p>
 			<i class="fas fa-phone-alt"></i> Let's Talk <br />
-			<span> 06 52 52 61 52</span>
+			<span> +33 6 52 52 61 52</span>
 		</p>
 
 		<p>
-			<i class=" far fa-envelope"></i> General Support <br />
+			<i class="far fa-envelope"></i> General Support <br />
 			<span>takeaseat@nedel.ec</span>
 		</p>
 	</div>
@@ -24,24 +24,22 @@
 	<div class="contact-child child2">
 		<div class="inside-contact">
 			<h2><%= page %></h2>
-			<h3><span id="confirm"></h3>
 
-			<p>Name *</p>
-			<input id="txt_name" type="text" Required="required">
+			<form id="form" method="post" enctype="multipart/form-data">
 
-			<p>Email *</p>
-			<input id="txt_email" type="text" Required="required">
+				<p>Name *</p>
+				<input id="nom" type="text" name="nom" placeholder="Ton pseudo" required>
 
-			<p>Phone *</p>
-			<input id="txt_phone" type="text" Required="required">
+				<p>Message *</p>
+				<textarea id="msg" type="text" name="msg" placeholder="Dis nous tout !" rows="10" cols="20" required></textarea>
+				
+				<input class="sub_btn" type="submit" value="Envoyer" />
 
-			<p>Subject *</p>
-			<input id="txt_subject" type="text" Required="required">
-
-			<p>Message *</p>
-			<textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
-			
-			<input type="submit" id="btn_send" value="SEND">
+			</form>
 		</div>
 	</div>
 </div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/contact.js"></script>
